@@ -1,0 +1,35 @@
+html,
+body {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+}
+
+#ui {
+  left: 50%;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1,
+#message-panel,
+#tile-board,
+#visual-keyboard {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+}
+
+.tile {
+  align-items: center;
+  border: thin solid black;
+  display: flex;
+  font-size: 32px;
+  justify-content: center;
+  margin: 3px;
+  min-height: 62px;
+  min-width: 62px;
+}
