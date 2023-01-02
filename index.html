@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Oh My Wordle!</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/UChicago-PL/cs11111-assets/wordle/words.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="ui">
+
+      <h1>Oh My Wordle!</h1>
+
+      <!-- Message Panel -->
+      <p id="message-panel">A place to display messages...</p>
+
+      <!-- Tile Board -->
+      <div id="tile-board">
+        <div class="row">
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+        </div>           
+        <div class="row">
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+        </div>
+        <div class="row">
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+        </div>
+        <div class="row">
+          <span class="tile"></span>  
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+        </div>
+        <div class="row">
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+        </div>
+        <div class="row">
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+          <span class="tile"></span>
+        </div>
+      </div>
+
+      <!-- Visual Keyboard -->
+      <div id="visual-keyboard">
+        <div>
+          <button onclick="keyOrButtonPressed('Q');">Q</button>
+          <button onclick="keyOrButtonPressed('W');">W</button>
+          <button onclick="keyOrButtonPressed('E');">E</button>
+          <button onclick="keyOrButtonPressed('R');">R</button>
+          <button onclick="keyOrButtonPressed('T');">T</button>
+          <button onclick="keyOrButtonPressed('Y');">Y</button>
+          <button onclick="keyOrButtonPressed('U');">U</button>
+          <button onclick="keyOrButtonPressed('I');">I</button>
+          <button onclick="keyOrButtonPressed('O');">O</button>
+          <button onclick="keyOrButtonPressed('P');">P</button>
+        </div>
+        <div>
+          <button onclick="keyOrButtonPressed('A');">A</button>
+          <button onclick="keyOrButtonPressed('S');">S</button>
+          <button onclick="keyOrButtonPressed('D');">D</button>
+          <button onclick="keyOrButtonPressed('F');">F</button>
+          <button onclick="keyOrButtonPressed('G');">G</button>
+          <button onclick="keyOrButtonPressed('H');">H</button>
+          <button onclick="keyOrButtonPressed('J');">J</button>
+          <button onclick="keyOrButtonPressed('K');">K</button>
+          <button onclick="keyOrButtonPressed('L');">L</button>
+        </div>
+        <div>
+          <button onclick="keyOrButtonPressed('Enter');">⏎</button>
+          <button onclick="keyOrButtonPressed('Z');">Z</button>
+          <button onclick="keyOrButtonPressed('X');">X</button>
+          <button onclick="keyOrButtonPressed('C');">C</button>
+          <button onclick="keyOrButtonPressed('V');">V</button>
+          <button onclick="keyOrButtonPressed('B');">B</button>
+          <button onclick="keyOrButtonPressed('N');">N</button>
+          <button onclick="keyOrButtonPressed('M');">M</button>
+          <button onclick="keyOrButtonPressed('Backspace');">⌫</button>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
